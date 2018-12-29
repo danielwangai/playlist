@@ -8,7 +8,8 @@ const app = express()
 // graphql middleware
 app.use("/graphql", graphqlHTTP({
     // pass graphql schema
-    schema //schema: schema
+    schema, //schema: schema
+    graphiql: true// test graphql
 }));
 
 app.listen(5000, () => {
