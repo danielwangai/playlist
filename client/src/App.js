@@ -5,7 +5,7 @@ import {ApolloProvider } from "react-apollo";
 import Booklist from "./components/Booklist";
 
 const client = new ApolloClient({
-  uri: process.env.APOLLO_CLIENT_URI
+  uri: "http://localhost:5000/graphql"
 })
 
 class App extends Component {
